@@ -14,4 +14,8 @@ This project was created with
 <img src="https://img.shields.io/badge/&uarr;-TOP-blue">
 <img src="https://img.shields.io/badge/&rarr;-RIGHT-orange">
 to change the palette.
+
+<h3>Preview</h3>
+<img src="https://github.com/alex-silveira/generate-color-palette/blob/master/img/preview.jpg?raw=true">
+
 </p>
