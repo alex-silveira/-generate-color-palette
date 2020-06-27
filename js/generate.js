@@ -15,33 +15,33 @@ $(function () {
 		}
 	});
 	
-	function generateColors(palette){		
+	function generateColors(palette){
 		//12 colors
 		for(let i = 0; i <= 12; i++) {
 			//hexadecimal color code
 			for (let j = 0; j <= 3; j++) {
-				//Generate random hexadecimal letters
-				randomLetters = Math.floor(Math.random() * letters.length);
-				//Generate random hexadecimal numbers
-				randomNumbers = Math.floor(Math.random() * numbers.length).toString();
+			//Generate random hexadecimal letters
+			randomLetters = Math.floor(Math.random() * letters.length);
+			//Generate random hexadecimal numbers
+			randomNumbers = Math.floor(Math.random() * numbers.length).toString();
 
 			if(palette == "palette01"){
-				//Add Hexadecimal color code in array hx palette 1
-				hx[j] = numbers[randomNumbers] + letters[randomLetters];
+			//Add Hexadecimal color code in array hx palette 1
+			hx[j] = numbers[randomNumbers] + letters[randomLetters];
 			}
 			if(palette == "palette02"){
-				//Add Hexadecimal color code in array hx palette 2
-				hx[j] = letters[randomLetters] + numbers[randomNumbers];
+			//Add Hexadecimal color code in array hx palette 2
+			hx[j] = letters[randomLetters] + numbers[randomNumbers];
 			}
-				//Add colors in array colors
-				colors[i] =  "#" + hx[0] + hx[1] + hx[2];
+			//Add colors in array colors
+			colors[i] =  "#" + hx[0] + hx[1] + hx[2];
 			}
-        }
+		}
 		// Generate different colors in the collumns
-        for(let i = 0; i < colors.length; i++) {
-            $("#"+palette+" .col-sm:nth-child("+i+")").css("background-color", colors[i]);
-            $("#"+palette+" .col-sm:nth-child("+i+")").text(colors[i]);
-        }
+		for(let i = 0; i < colors.length; i++) {
+			$("#"+palette+" .col-sm:nth-child("+i+")").css("background-color", colors[i]);
+			$("#"+palette+" .col-sm:nth-child("+i+")").text(colors[i]);
+		}
 	}
 	
 	function generatePalettes(){
