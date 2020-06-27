@@ -8,7 +8,7 @@ This project was created with
 
 <h2>How to use</h2>
 
-<p>Press to KEY 
+<p>Press the KEYS 
 <img src="https://img.shields.io/badge/&larr;-LEFT-red">
 <img src="https://img.shields.io/badge/&darr;-BOTTOM-green">
 <img src="https://img.shields.io/badge/&uarr;-TOP-blue">
