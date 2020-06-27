@@ -1,0 +1,11 @@
+.col-sm{
+    font-size: 1.2rem;
+}
+#palette01 .col-sm{
+    height: 50vh;
+    color: #dee2e6;
+}
+#palette02 .col-sm{
+    height: 50vh;
+    color: #6c757d;
+}
